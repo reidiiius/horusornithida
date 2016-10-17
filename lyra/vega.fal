@@ -2,28 +2,30 @@
 
 Tanabata = bless([
 
+'epochian' => "-v" + (CurrentTime().toLongFormat()),
+
 'orihime' => function(qp)
     hanzi = dictGet(Acipitriform.Pandionida, qp)
-    printl("\t" + qp)
-    printl("\t" + hanzi[15:36] + hanzi[00:15])
-    printl("\t" + hanzi[00:36] + hanzi[00:00])
-    printl("\t" + hanzi[21:36] + hanzi[00:21])
-    printl("\t" + hanzi[06:36] + hanzi[00:06])
-    printl("\t" + hanzi[27:36] + hanzi[00:27])
-    printl("\t" + hanzi[12:36] + hanzi[00:12])
-    printl("\t" + hanzi[33:36] + hanzi[00:33])
+      > "\t" + qp + self.epochian
+      > "\t" + hanzi[15:36] + hanzi[00:15]
+      > "\t" + hanzi[00:36] + hanzi[00:00]
+      > "\t" + hanzi[21:36] + hanzi[00:21]
+      > "\t" + hanzi[06:36] + hanzi[00:06]
+      > "\t" + hanzi[27:36] + hanzi[00:27]
+      > "\t" + hanzi[12:36] + hanzi[00:12]
+      > "\t" + hanzi[33:36] + hanzi[00:33]
   end,
 
 'hikoboshi' => function(qp)
     latin_n0 = dictGet(Acipitriform.Sagitarida, qp)
-    printl("\t" + qp)
-    printl("\t" + latin_n0[25:60] + latin_n0[00:25])
-    printl("\t" + latin_n0[00:60] + latin_n0[00:00])
-    printl("\t" + latin_n0[35:60] + latin_n0[00:35])
-    printl("\t" + latin_n0[10:60] + latin_n0[00:10])
-    printl("\t" + latin_n0[45:60] + latin_n0[00:45])
-    printl("\t" + latin_n0[20:60] + latin_n0[00:20])
-    printl("\t" + latin_n0[55:60] + latin_n0[00:55])
+      > "\t" + qp + self.epochian
+      > "\t" + latin_n0[25:60] + latin_n0[00:25]
+      > "\t" + latin_n0[00:60] + latin_n0[00:00]
+      > "\t" + latin_n0[35:60] + latin_n0[00:35]
+      > "\t" + latin_n0[10:60] + latin_n0[00:10]
+      > "\t" + latin_n0[45:60] + latin_n0[00:45]
+      > "\t" + latin_n0[20:60] + latin_n0[00:20]
+      > "\t" + latin_n0[55:60] + latin_n0[00:55]
   end
 
 ], true)
