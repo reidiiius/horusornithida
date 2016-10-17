@@ -7,12 +7,13 @@ clade_order = dictKeys(Acipitriform.Pandionida)
 
 for aves in clade_order
 
-   forfirst: printl("\n")
-  formiddle: printl("\n")
-    forlast: printl("\n")
+   forfirst: > "\n"
+  formiddle: > "\n"
+    forlast: > "\n"
 
   Tanabata.orihime(aves)
-//  Tanabata.hikoboshi(aves)
+  >
+  Tanabata.hikoboshi(aves)
 
 end
 
